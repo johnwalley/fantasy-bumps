@@ -1,0 +1,20 @@
+<h1>{{ crew.club.name }} - {{ crew.boat }} ({{ crew.name }})</h1>
+<h2>Crew</h2>
+<ul>
+    <li>Cox: <a href="{% url 'fantasybumps:rower_detail' crew.cox.id %}">{{ crew.cox }}</a></li>
+    <li>Stroke: <a href="{% url 'fantasybumps:rower_detail' crew.stroke.id %}">{{ crew.stroke}}</a></li>
+    <li>7: <a href="{% url 'fantasybumps:rower_detail' crew.seven.id %}">{{ crew.seven }}</a></li>
+    <li>6: <a href="{% url 'fantasybumps:rower_detail' crew.six.id %}">{{ crew.six }}</a></li>
+    <li>5: <a href="{% url 'fantasybumps:rower_detail' crew.five.id %}">{{ crew.five }}</a></li>
+    <li>4: <a href="{% url 'fantasybumps:rower_detail' crew.four.id %}">{{ crew.four }}</a></li>
+    <li>3: <a href="{% url 'fantasybumps:rower_detail' crew.three.id %}">{{ crew.three }}</a></li>
+    <li>2: <a href="{% url 'fantasybumps:rower_detail' crew.two.id %}">{{ crew.two }}</a></li>
+    <li>Bow: <a href="{% url 'fantasybumps:rower_detail' crew.cox.id %}">{{ crew.bow }}</a></li>
+</ul>
+<h2>Results</h2>
+<ul>
+    <li>Tuesday: {{ crew.result_1 }}</li>
+    <li>Wednesday: {{ crew.result_2 }}</li>
+    <li>Thursday: {{ crew.result_3 }}</li>
+    <li>Friday: {{ crew.result_4 }}</li>
+</ul>

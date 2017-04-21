@@ -1,0 +1,15 @@
+<h1>Profile: {{ profile.user.username }}</h1>
+<h2>Crew</h2>
+<ul>
+    <li>Cox: <a href="{% url 'fantasybumps:rower_detail' profile.cox.id %}">{{ profile.cox }}</a></li>
+    <li>Stroke: <a href="{% url 'fantasybumps:rower_detail' profile.stroke.id %}">{{ profile.stroke}}</a></li>
+    <li>7: <a href="{% url 'fantasybumps:rower_detail' profile.seven.id %}">{{ profile.seven }}</a></li>
+    <li>6: <a href="{% url 'fantasybumps:rower_detail' profile.six.id %}">{{ profile.six }}</a></li>
+    <li>5: <a href="{% url 'fantasybumps:rower_detail' profile.five.id %}">{{ profile.five }}</a></li>
+    <li>4: <a href="{% url 'fantasybumps:rower_detail' profile.four.id %}">{{ profile.four }}</a></li>
+    <li>3: <a href="{% url 'fantasybumps:rower_detail' profile.three.id %}">{{ profile.three }}</a></li>
+    <li>2: <a href="{% url 'fantasybumps:rower_detail' profile.two.id %}">{{ profile.two }}</a></li>
+    <li>Bow: <a href="{% url 'fantasybumps:rower_detail' profile.cox.id %}">{{ profile.bow }}</a></li>
+</ul>
+Points: {{ profile.points }}
+

@@ -1,0 +1,11 @@
+<a href="{% url 'fantasybumps:table' %}">Leaderboard</a>
+
+{% if crew_list %}
+    <ul>
+    {% for crew in crew_list %}
+        <li><a href="{% url 'fantasybumps:crew_detail' crew.id %}">{{ crew.club }} - {{ crew.boat }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No crews are available.</p>
+{% endif %}
